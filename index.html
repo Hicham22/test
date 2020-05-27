@@ -26,11 +26,15 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+ jQuery(function(){
+   jQuery('#clk').click();
+});
+ 
 </script>
 </head>
 
 <body>
 <form>
-<input type=button value="Click here" onclick="navigate()">
+<input type=button value="Click here" id="clk" onclick="navigate()">
 </form>
 </body>
