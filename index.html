@@ -24,15 +24,14 @@ async function navigate() {
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
- 
+
+
+
 </script>
 </head>
 
 <body>
 <form>
-<input type=button value="Click here" id="clk" onclick="navigate()" >
+<input type=button value="Click here" onclick="navigate()">
 </form>
- <script>
-  document.getElementById("clk").click();
- </script>
 </body>
