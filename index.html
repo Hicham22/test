@@ -1,0 +1,35 @@
+<html>
+<head>
+<title></title>
+<script type="text/javascript">
+
+async function navigate() {
+ var _window = window.open("","_blank")
+ var urlList=['http://p.zetadeo.com/go/274858/566164/aHR0cHMlM0EvL2dyb3VwZTIxMS5ibG9nc3BvdC5jb20vMjAyMC8wNS9qc2hkaGhkZC5odG1sJTNGbSUzRDE=?cb=1481316758295783.2',
+ 'http://p.zetadeo.com/go/274859/566166/aHR0cHMlM0EvL2dycG91amRoamRzampkLmJsb2dzcG90LmNvbS8yMDIwLzA1L2hkaGRqZGpkai5odG1sJTNGbSUzRDE=?cb=3190893616379258',
+ 'http://p.zetadeo.com/go/274458/565356/aHR0cHMlM0EvL2hhcG9sb3A2Ny5ibG9nc3BvdC5jb20vMjAyMC8wNS9qZGpkamRqZGJ3ai5odG1sJTNGbSUzRDE=?cb=3382055625644957.5',
+ 'http://p.zetadeo.com/go/274459/566505/aHR0cHMlM0EvL2dhbW9wdTU2NzcuYmxvZ3Nwb3QuY29tLzIwMjAvMDUvZ2FtZS5odG1s?cb=7250212351835170',
+ 'http://p.zetadeo.com/go/274461/565360/aHR0cHMlM0EvL2pvcmdpbmE1Nzc3LmJsb2dzcG90LmNvbS8yMDIwLzA1L2xlLWxpb24uaHRtbCUzRm0lM0Qx?cb=7420093298571466',
+ 'http://p.zetadeo.com/go/274465/565364/aHR0cHMlM0EvL2NvdWxldXJzNDY2LmJsb2dzcG90LmNvbS8yMDIwLzA1L2NvdWxldXIuaHRtbCUzRm0lM0Qx?cb=7001212530279581',
+ 'http://p.zetadeo.com/go/274466/565366/aHR0cHMlM0EvL2Job25ldXI2NzguYmxvZ3Nwb3QuY29tLzIwMjAvMDUvYmhvbmV1ci5odG1sJTNGbSUzRDE=?cb=7973672503227300',
+ 'http://p.zetadeo.com/go/274467/565367/aHR0cHMlM0EvL3ZveWFnZTU1NTU1LmJsb2dzcG90LmNvbS8yMDIwLzA1L3ZveWFnZS5odG1sJTNGbSUzRDE=?cb=6335543784351090',
+ 'http://p.zetadeo.com/go/274468/565370/aHR0cHMlM0EvL3ZpbGxlNDU1Ni5ibG9nc3BvdC5jb20vMjAyMC8wNS92aWxsZS5odG1sJTNGbSUzRDE=?cb=2531407377604708.5',
+ 'http://p.zetadeo.com/go/274473/565373/aHR0cHMlM0EvL2FnYWRpcjU2NzcuYmxvZ3Nwb3QuY29tLzIwMjAvMDUvYWdhZGlyLmh0bWwlM0ZtJTNEMQ==?cb=4151703154186297']; 
+ for (var url of urlList) {     
+    _window.location.replace(url);
+    await sleep(2500);
+ }   
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+</script>
+</head>
+
+<body>
+<form>
+<input type=button value="Click here" onclick="navigate()">
+</form>
+</body>
